@@ -13,6 +13,11 @@ case "$PROCESSOR_TYPE" in
 	CXXFLAGS="-flto -fuse-linker-plugin -mtune=generic -Os -pipe -fno-exceptions -fno-rtti"
 	LDFLAGS="-Wl,-O1"
 	;;
+	
+	armv7l)
+	CXXFLAGS="-march=armv7 -mtune=arm1176jzf-s -mfpu=vfp -Os -pipe -fno-exceptions -fno-rtti"
+	LDFLAGS="-Wl,-O1"
+	;;
 
 	armv*)
 	CXXFLAGS="-march=armv6zk -mtune=arm1176jzf-s -mfpu=vfp -Os -pipe -fno-exceptions -fno-rtti"
