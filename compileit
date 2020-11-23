@@ -39,8 +39,8 @@ echo -e "CPPFLAGS=$CPPFLAGS\n"
 
 echo Building flwm...
 g++ -o flwm *.C $CXXFLAGS $LDFLAGS $CPPFLAGS
-sstrip flwm
+strip flwm
 
 echo Building flwm_topside...
 g++ -o flwm_topside -DTOPSIDE *.C $CXXFLAGS $LDFLAGS $CPPFLAGS
-sstrip flwm_topside
+strip flwm_topside
