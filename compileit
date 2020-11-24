@@ -20,7 +20,7 @@ case "$PROCESSOR_TYPE" in
 	;;
 	
 	armv8l)
-	CXXFLAGS="-march=armv8 -mtune=arm1176jzf-s -mfpu=vfp -Os -pipe -fno-exceptions -fno-rtti"
+	CXXFLAGS="-march=armv8-a -mtune=arm1176jzf-s -mfpu=vfp -Os -pipe -fno-exceptions -fno-rtti"
 	LDFLAGS="-Wl,-O1"
 	;;
 
